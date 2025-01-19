@@ -1,0 +1,189 @@
+.hero{
+    height: auto;
+    width: 100%;
+    background-color: #ECF0F1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+}
+.main_cont{
+    height: 72vh;
+    width: 90%;
+    /* background-color: #f0f; */
+    position: relative;
+    margin:70px auto;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    /* background-color: #f0f; */
+}
+.right{
+    padding-left: 20px;
+    height: 100%;
+    width: 50%;
+    /* background-color: #0ff; */
+    display: flex;
+    justify-content: left;
+}
+.textt{
+    margin-left: 20px;
+    margin-top: 20%;
+    /* background-color: #fff; */
+    color: #000;
+}
+.lft,.l3{
+    animation: scrol 1.3s ease-in-out 0s 1 normal;
+}
+.l1{
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.l3{
+    font-size: 20px;
+    font-weight: 450;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.inputs{
+    height: 70px;
+    width: 95%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 20px;
+    animation: visible 1.5s ease-in-out 0s 1 normal ;
+}
+.inputs > input{
+    height: 35px;
+    width: 85%;
+    border: .4px solid #113f649d;
+    outline: none;
+    background-color: #fff;
+    padding: 10px;
+    margin-right: 10px;
+    animation: visible 1.5s ease-in-out 0s 1 normal ;
+}
+.btn{
+    height: 25px;
+    width: 15%;
+    background-color: #115F64;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    animation: visible 1.5s ease-in-out 0s 1 normal ;
+}
+.rl{
+    height: 100%;
+    width: 30%;
+    /* background-color: #fff;  */
+}
+.rr {
+    z-index: 1; /* Ensure this is higher than -5 */
+    position: relative; /* Establishes a new stacking context */
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+    background-image: url(https://images.javatpoint.com/images/home-1.png);   
+}
+.img1{
+    z-index: 2;
+    position: relative;
+    height: 220px;
+    width: 220px;
+   background-image: url(https://images.javatpoint.com/images/small_home.png);
+    border-radius: 10px;
+    top: 50px;
+}
+.img2{
+    height: 150px;
+    width: 160px;
+    background-color: #ffffffdb;
+    z-index: 3;
+    position: relative;
+    top: -110px;
+    left: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i2p1{
+    font-size: 25px;
+    font-weight: 900;
+}
+.i2p2{
+    font-weight: 500;
+}
+.img3{
+    z-index: 2;
+    height: 57px;
+    width: 52px;
+    background-image: url(https://images.javatpoint.com/static/img/shape2.png);
+    
+    position: relative;
+    top: -205px;
+    left: -35px;
+}
+.img4{
+    z-index: 2;
+    height: 56px;
+    width: 51px;
+    background-image: url(https://images.javatpoint.com/static/img/shape3.png);
+    
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
+.img5 {
+   
+    height: 140px;
+    width: 140px;
+    background-image: url(https://images.javatpoint.com/static/img/shape4.png);
+    position: absolute; /* Position should be absolute or fixed */
+    top: -30px;
+    right: 40px;
+    /* background-color: #f00; */
+}
+.img6 {
+    z-index: -1; /* This will move it behind the .rr element */
+    height: 50px;
+    width: 50px;
+    background-image: url(https://images.javatpoint.com/static/img/shape1.png);
+    position: absolute; /* Position should be absolute or fixed */
+    top: 240px;
+    left: 355px;
+}
+@keyframes scrol {
+    0%{
+        
+        scale: .02;
+        
+    }
+    100%{
+       
+        scale: 1;
+    }
+}
+@keyframes visible {
+    0%{
+        
+        visibility: hidden;
+        
+    }
+    100%{
+       
+        visibility:visible;
+    }
+}

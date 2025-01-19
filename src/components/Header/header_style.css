@@ -1,0 +1,113 @@
+
+.nightmode{
+    background-color: rgba(0, 0, 0, 0.835);
+    color: white;
+}
+.header{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: #ECF9F1;
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #814545; */
+}
+.logo img{
+    margin-top: 20px;
+    width: 70%;
+    height: 60%;
+    transform: scale(.9);
+}
+.body{
+    height: 100%;
+    display: flex;
+    width: 70%;
+}
+.tab{
+    width: 82%;
+    /* background-color: #58c054; */
+    display: flex;
+    justify-content: flex-end;
+}
+.tab:hover{
+    cursor: pointer;
+}
+.them:hover{
+    box-shadow: #00000069 0 0 10px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+.tutorial{
+    width: 20%;
+    /* background-color: #6e29c9; */
+    padding: 40px 0 0 80px;
+    font-weight: 600;
+    font-size: 15px;
+}
+.theme-switcher{
+    width: 18%;
+    /* background-color: #29bec9; */
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+}
+.them{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+#A{
+    background-color: #000;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+#B{
+    background-color: #059862;
+}
+#C{
+    background-color: #0D4549;
+}
+#D{
+    background-color: #231760;
+}
+#E{
+    background-color: #286562;
+}
+.header2{
+    position: relative;
+    top: 95px;
+    width: 100%;
+    
+}
+.nav{
+    height: 45px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    align-items: center;
+}
+.nav>a{
+    text-decoration: none;
+}
+.course{
+    
+    display: flex;
+    height: 45px;
+    padding: 15px;
+}
+.course:hover{
+    background-color: #0D4549;
+}
+.text{
+    
+    color: #fff;
+}

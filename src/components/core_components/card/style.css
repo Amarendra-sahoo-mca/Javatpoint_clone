@@ -1,0 +1,18 @@
+.card_cont{
+    height: 160px;
+    width: 160px;
+    border-radius: 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s ease;
+    margin:8px 4px;
+    cursor: pointer;
+}
+.card_cont:hover{
+    transform: translateY(-10px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.626);
+}

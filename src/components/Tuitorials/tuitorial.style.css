@@ -1,0 +1,31 @@
+.container{
+    width: 97vw;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 10px 5%;
+    height: auto;
+}
+.container > h3 {
+    font-size: 30px;
+    font-weight: 500;
+    animation: scrol 1.3s ease-in-out 0s 1 normal;
+}
+.container > p {
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 2px;
+    margin-bottom: 60px;
+    animation: scrol 1.3s ease-in-out 0s 1 normal;
+}
+@keyframes scrol {
+    0%{
+        
+        scale: .02;
+        
+    }
+    100%{
+       
+        scale: 1;
+    }
+}
