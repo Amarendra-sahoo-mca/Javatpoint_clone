@@ -1,4 +1,4 @@
-import { formatString } from '../../../constant/functions'
+
 import './style.css'
 function Card(props : {logo:string, title:string}) {
     const {logo, title} = props

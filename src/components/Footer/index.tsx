@@ -1,4 +1,4 @@
-import React from "react";
+
 import { FooterData, FooterKeys, imagepath } from "../../constant/data";
 import { formatString } from "../../constant/functions";
 

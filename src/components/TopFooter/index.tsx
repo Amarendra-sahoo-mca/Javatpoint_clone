@@ -18,7 +18,7 @@ function TopFooter() {
             <p className="ll" style={{fontWeight:'700', fontSize: '18px',marginBottom:'10px'}}>Youtube Channel</p>
             <h2 className="llb" style={{fontSize:'25px'}}>Explore Latest Tutorials by Subscribing to Our YouTube Channel</h2>
             </p>
-            <button className='btn'>
+            <button className='btnnnn'>
             <i className="fa-solid fa-arrow-right" style={{color: "#ffffff"}}></i>                {/* <i className="fa-sharp fa-solid fa-moon" style={{ color: "#ffffff" }}></i> */}
                 Join Now</button>
       </div>
