@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/Javatpoint_clone/', 
-  server: {
-    open:true,
-  }
+  // server: {
+  //   open:true,
+  // }
   
 })
