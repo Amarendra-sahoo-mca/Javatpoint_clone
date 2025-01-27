@@ -1,0 +1,9 @@
+
+.nightmode{
+    background-color: rgba(0, 0, 0, 0.728);
+    color: white;
+}
+.daymode{
+    color: rgba(0, 0, 0, 0.835);
+    background-color: white;
+}

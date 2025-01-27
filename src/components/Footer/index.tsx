@@ -1,8 +1,9 @@
-
 import { FooterData, FooterKeys, imagepath } from "../../constant/data";
 import { formatString } from "../../constant/functions";
+import { useTuggle } from "../../context/tuggleContext";
 
 function Footer() {
+    const {themMode} =useTuggle();
     const smedia = {
         margin: '4px',
         borderRadius:'10px',
@@ -14,19 +15,22 @@ function Footer() {
     }
   return (
     <>
-      <div
+      <div 
         style={{
           width: "90%",
           height: "530px",
-          backgroundColor: "#ff0",
+         
           margin: "0 auto",
           display: "flex",
+          backgroundColor:`${themMode == 'daymode' ? '#fff' : 'rgba(0, 0, 0)'}`,
+              color:`${themMode == 'daymode' ? '#333' : '#fff'}`
         }}
       >
         <div
           className="cgild"
-          style={{ height: "100%", width: "40%", backgroundColor: "#fff", }}
-        >
+          style={{ height: "100%", width: "40%", 
+             
+            }}>
           <img src={imagepath.logo} alt="Logo" />
           <p style={{ margin: "20px 10px 20px 0", lineHeight: "20px" }}>
             We provides tutorials and interview questions of all technology like
@@ -36,23 +40,25 @@ function Footer() {
           <p
             style={{
               marginTop: "20px",
-              backgroundColor: "#fff",
               display: "flex",
               alignItems: "center",
+              backgroundColor:`${themMode == 'daymode' ? '#fff' : 'rgba(0, 0, 0)'}`,
+              color:`${themMode == 'daymode' ? '#333' : '#fff'}`
             }}
           >
             <i
               className="fa-solid fa-location-dot"
-              style={{ color: "#000000", fontSize: "25px" }}
+              style={{ color: "#000000" ,fontSize: "25px" }}
             ></i>{" "}
             &nbsp; G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
           </p>
           <p
             style={{
               marginTop: "20px",
-              backgroundColor: "#fff",
               display: "flex",
               alignItems: "center",
+              backgroundColor:`${themMode == 'daymode' ? '#fff' : 'rgba(0, 0, 0)'}`,
+              color:`${themMode == 'daymode' ? '#333' : '#fff'}`
             }}
           >
             <i
@@ -81,13 +87,15 @@ function Footer() {
             style={{
               height: "100%",
               width: "20%",
-              backgroundColor: "#fff",
+               backgroundColor:`${themMode == 'daymode' ? '#fff' : 'rgba(0, 0, 0)'}`,
+              color:`${themMode == 'daymode' ? '#333' : '#fff'}`,
               padding: "30px 40px",
             }}
             key={item}
           >
             <p
               style={{
+                color:`${themMode == 'daymode' ? '#333' : '#fff'}`,
                 fontWeight: "bold",
                 marginBottom: "30px",
               }}
@@ -101,6 +109,7 @@ function Footer() {
                   style={{
                     height: "20px",
                     margin: "20px 0",
+                    color:`${themMode == 'daymode' ? '#333' : '#fff'}`,
                   }}
                   key={key}
                 >

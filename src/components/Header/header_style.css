@@ -1,13 +1,9 @@
 
-.nightmode{
-    background-color: rgba(0, 0, 0, 0.835);
-    color: white;
-}
 .header{
     z-index: 10;
     position: fixed;
     width: 100%;
-    background-color: #ECF9F1;
+    /* background-color: #ECF9F1; */
     display: flex;
     justify-content: space-between;
     height: 95px;

@@ -1,9 +1,12 @@
 
+import { useTuggle } from "../../context/tuggleContext";
 import "./herostyle.css";
 function Hero() {
+  const {themMode} =useTuggle();
   return (
-    <div className="hero">
-      <div className="main_cont">
+    <div className="hero" style={{backgroundColor:`${themMode == 'daymode' ? '#fff' : 'rgba(0, 0, 0, 0.34)'}`,
+    color:`${themMode == 'daymode' ? '#333' : '#fff'}`}}>
+      <div className="main_cont" >
         <div className="left">
           <div className="textt">
             <p className="l1">Free Online Tutorials</p>

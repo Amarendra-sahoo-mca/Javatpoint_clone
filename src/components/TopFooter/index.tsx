@@ -1,8 +1,13 @@
+import { useTuggle } from '../../context/tuggleContext';
 import './style.css'
 
 function TopFooter() {
+  const {themMode} =useTuggle();
   return (
-    <div className='main_contt'>
+    <div className='main_contt'style={ 
+      { backgroundColor:`${themMode == 'daymode' ? '#ECF9F1' : 'rgba(0, 0, 0)'}`,
+        color:`${themMode == 'daymode' ? '#333' : '#fff'}`
+      }} >
       <div className="img">
         <img src="https://images.javatpoint.com/static/img/Ellipse%202.png" alt="Ellipse-2" id='round_1'/>
         <img src="https://images.javatpoint.com/static/img/Ellipse%201.png" alt="Ellipse-1" id='round_2'/>

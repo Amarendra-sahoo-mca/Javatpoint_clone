@@ -1,13 +1,16 @@
+import { useTuggle } from "../../context/tuggleContext";
+
 function Disclaimer() {
+  const {themMode} =useTuggle();
   return (
     <div style={ 
-        { backgroundColor:'#ECF9F1', 
+        { backgroundColor:`${themMode == 'daymode' ? '#ECF9F1' : 'rgba(0, 0, 0, 0.728)'}`, 
           height:'auto', 
           width:'90%', 
           margin:'40px auto', 
           padding:'20px',
           lineHeight:'30px' ,
-          color:'#333333',
+          color:`${themMode == 'daymode' ? '#333333' : '#fff'}`,
           textAlign:'justify',
           borderRadius:'10px'
           }}>

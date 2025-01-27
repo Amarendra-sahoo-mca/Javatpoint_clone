@@ -1,22 +1,29 @@
 import  { useRef, useState } from "react";
 import "./header_style.css";
 import { bheader, imagepath } from "../../constant/data";
+import { useTuggle } from "../../context/tuggleContext";
 
 export default function Header() {
   const [theme, setTheme] = useState("#059862");
   const [mode, setMode] = useState(false);
   const bodyRef = useRef(document.body);
+  const {themMode,lightMode, darkMode} =useTuggle();
+ 
+  
+
   const changethem = (color: string) => {
     setTheme(color);
   }
+
   const Mode = () => {
-    const body = bodyRef.current;
-    !mode ? body?.classList.add("nightmode") : body?.classList.remove("nightmode");
+   
+    !mode ? darkMode() : lightMode();
     setMode(!mode);
   }
   return (
     <>
-      <div className="header">
+      <div className="header" style={ 
+        { backgroundColor:`${themMode == 'daymode' ? '#ECF9F1' : 'rgba(0, 0, 0)'}`}}>
         <div className="logo">
           <img src={imagepath.logo} alt="Logo" />
         </div>
